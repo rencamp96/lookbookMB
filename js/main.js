@@ -13,7 +13,7 @@ var videoInteractivo = document.getElementById("videoInteractivo");
 
 
 function preload() {
-		bloom = loadShader("./shaders/base.vert", "./shaders/glitch01.frag");
+		// bloom = loadShader("./shaders/base.vert", "./shaders/glitch01.frag");
 }
 
 function setup() {
