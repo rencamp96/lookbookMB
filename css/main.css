@@ -1,0 +1,777 @@
+/* //////////////////////////////////////////////
+//////               Fonts                 //////
+////////////////////////////////////////////// */
+@font-face {
+  font-family: MontserratRegular;
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: MontserratMedium;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: MontserratLight;
+  src: url(./fonts/Montserrat-Light.ttf);
+}
+
+/* //////////////////////////////////////////////
+//////           Paleta de color           //////
+////////////////////////////////////////////// */
+  /* gris = #ebebeb
+  azul = #bd0052
+  rosa = #EBD2B4
+  verde = #8170ff
+  rosa-claro = #ffd8e8 */
+
+/* //////////////////////////////////////////////
+//////                 Texto               //////
+////////////////////////////////////////////// */
+html, body{
+  font-family: MontserratRegular;
+  color: #bd0052;
+  display:flex;
+}
+
+#background{
+  background-color: #dedede;
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1000;
+}
+
+h1 {
+	color: #bd0052;
+	font-family: MontserratRegular;
+  font-size: 4.5vw;
+} @media only screen and (max-width: 1060px) {
+  h1 {
+    font-size: 6vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 10vw;
+  }
+}
+
+h2 {
+	color: #bd0052;
+	font-family: MontserratLight;
+  font-size: 2.3vw;
+  line-height: .7;
+} @media only screen and (max-width: 1060px) {
+  h2 {
+    font-size: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h2 {
+    font-size: 4.8vw;
+  }
+}
+
+h6 {
+	color: #bd0052;
+	font-family: MontserratMedium;
+  font-size: .6vw;
+} @media only screen and (max-width: 1060px) {
+  h6 {
+    font-size: .9vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h6 {
+    font-size: 2.1vw;
+  }
+}
+
+p {
+	color: #bd0052;
+	font-family: MontserratMedium;
+  font-size: .8vw;
+  line-height: 1.485vw;
+} @media only screen and (max-width: 1060px) {
+  p {
+    font-size: 1vw;
+    line-height: 2vw;
+  }
+} @media only screen and (max-width: 600px) {
+  p {
+    font-size: 1.8vw;
+    line-height: 3vw;
+  }
+}
+
+#center {
+  position: relative;
+}
+
+
+/* //////////////////////////////////////////////
+//////         Ventanas cerrable 1         //////
+////////////////////////////////////////////// */
+.reel1{
+  display: inline-block;
+  padding: .5vw;
+  background-color: #dedede;
+  position: absolute;
+  left: 3vw;
+  top: 0vw;
+  color: #bd0052;
+  border: 2px solid #bd0052;
+  width: 27vw;
+  height: 20.3vw;
+  z-index: 0;
+  font-size: .7vw;
+} @media only screen and (max-width: 1060px) {
+  .reel1 {
+    display: none
+  }
+} @media only screen and (max-width: 600px) {
+  .reel1{
+    display: none
+  }
+}
+
+.closebtn {
+  margin-left: 15px;
+  float: right;
+  color: #bd0052;
+  font-weight: bold;
+  font-size: 2vw;
+  line-height: 1vw;
+  cursor: pointer;
+}
+.closebtn:hover {
+  color: #EBD2B4;
+}
+
+hr.new1 {
+  border-top: 1px solid #bd0052;
+}
+
+/* //////////////////////////////////////////////
+//////         Ventanas cerrables 2         //////
+////////////////////////////////////////////// */
+.alert {
+  display: inline-block;
+  padding: .5vw;
+  background-color: #dedede;
+  position: absolute;
+  left: 45vw;
+  top: 10.5vw;
+  color: #bd0052;
+  border: 2px solid #bd0052;
+  width: 27vw;
+  height: 12.5vw;
+  z-index: 10;
+  font-size: .7vw;
+} @media only screen and (max-width: 1060px) {
+  .alert {
+    padding: 1vw;
+    width: 35vw;
+    height: 15vw;
+    left: 44vw;
+    top: 23vw;
+    font-size: 1.2vw;
+  }
+} @media only screen and (max-width: 600px) {
+  .alert {
+    padding: 1vw;
+    top: 93vw;
+    left: 5vw;
+    width: 65vw;
+    height: 27vw;
+    font-size: 2.5vw;
+  }
+}
+
+.closebtn {
+  margin-left: 15px;
+  float: right;
+  color: #bd0052;
+  font-weight: bold;
+  font-size: 2vw;
+  line-height: 1vw;
+  cursor: pointer;
+}@media only screen and (max-width: 1060px) {
+  .closebtn{
+    line-height: 1.5vw;
+    font-size: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  .closebtn {
+    line-height: 3vw;
+    font-size: 5vw;
+  }
+}
+
+.closebtn:hover {
+  color: #EBD2B4;
+}
+
+hr.new1 {
+  border-top: 1px solid #bd0052;
+}
+
+
+/* //////////////////////////////////////////////
+//////          diseño de párrafo          //////
+////////////////////////////////////////////// */
+#info1 {
+  width: 12vw;
+  position: absolute;
+  top: 24vw;
+  left: 61vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #info1 {
+    top: 40vw;
+    left: 65vw;
+    width: 14.5vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #info1 {
+    top: 122vw;
+    left: 7vw;
+    width: 24vw;
+    z-index: 10;
+  }
+}
+
+#titulo {
+  text-align: right;
+  padding-top: 3vw;
+  margin: 0;
+  padding-right: .5vw;
+} @media only screen and (max-width: 600px){
+  #titulo {
+    padding-top: 3vw;
+    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+#subtitulo {
+  text-align: right;
+  margin: 0;
+  padding-right: .5vw;
+} @media only screen and (max-width: 600px){
+  #subtitulo {
+    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+/* //////////////////////////////////////////////
+//////             P5 Sketch               //////
+////////////////////////////////////////////// */
+
+#sketch-holder{
+  position: absolute;
+  top: 1vw;
+  left: 27vw;
+  border: 2px solid #bd0052;
+} @media only screen and (max-width: 1060px){
+  #sketch-holder{
+    top: 0vw;
+    left: 17vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #sketch-holder{
+    top: 0vw;
+    left: 10vw;
+  }
+}
+
+#pic-holder{
+  position: absolute;
+  top: 4vw;
+  left: 27vw;
+  border: 2px solid #bd0052;
+  background-image: url(../assets/image02.jpg);
+  background-size: cover;
+  width: 23vw;
+  height: 34vw;
+} @media only screen and (max-width: 1060px){
+  #pic-holder{
+    top: 0vw;
+    left: 17vw;
+    width: 35vw;
+    height: 53vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #pic-holder{
+    top: 0vw;
+    left: 10vw;
+    width: 55vw;
+    height: 82vw;
+  }
+}
+
+/* //////////////////////////////////////////////
+//////          Cuadros de fondo           //////
+////////////////////////////////////////////// */
+
+#cuadroVerde1{
+  background-color: #ffedab;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0vw;
+  height: 0vw;
+  z-index: -5;
+} @media only screen and (max-width: 600px){
+  #cuadroVerde1{
+    top: 7vw;
+    width: 71vw;
+    height: 23vw;
+    z-index: -50;
+  }
+}
+
+#cuadroVerde2{
+  background-color: #ffedab;
+  position: absolute;
+  top: 12.5vw;
+  left: 47vw;
+  width: 28vw;
+  height: 13.5vw;
+  z-index: 0;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde2{
+    top: 26vw;
+    left: 47vw;
+    width: 37vw;
+    height: 17vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde2{
+    top: 100vw;
+    left: 10vw;
+    width: 67vw;
+    height: 27vw;
+    z-index: 5;
+  }
+}
+
+#cuadroVerde3{
+  background-image: linear-gradient(-90deg, #aae6de, #aae6de, #f5c6ec);
+  position: absolute;
+  height: 100%;
+  min-height: 45vw;
+  left: 0;
+  width: 45vw;
+  top: 0;
+  z-index: -102;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde3{
+    height: 100vw;
+    min-height: 100vh;
+    width: 23vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde3{
+    width: 0;
+    height: 0;
+  }
+}
+
+#cuadroVerde3Frame{
+  top: 0;
+  background-color: #dedede;
+  position: absolute;
+  height: 40vw;
+  left: 0vw;
+  width: 45vw;
+  z-index: -101;
+  overflow-x: hidden !important;
+}
+
+#cuadroVerde4{
+  background-color: #CB829A;
+  position: absolute;
+  height: 100%;
+  min-height: 45vw;
+  left: 74vw;
+  width: 26vw;
+  top: 0;
+  z-index: -7;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde4{
+    height: 100vw;
+    min-height: 100vh;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde4{
+    width: 15vw;
+    left: 85vw;
+    height: 130vw;
+    min-height: 130vh;
+  }
+}
+
+#cuadroVerde4Frame{
+  top: 0;
+  background-color: #dedede;
+  position: absolute;
+  height: 43vw;
+  left: 70vw;
+  width: 30vw;
+  z-index: -6;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #cuadroVerde4Frame {
+    height: 75vw;
+  }
+} @media only screen and (max-width: 600px){
+  #cuadroVerde4Frame{
+    width: 15vw;
+    height: 140vw;
+    left: 85vw;
+  }
+}
+
+#cuadroAzul1{
+  background-color: #bd0052;
+  position: absolute;
+  top: 12vw;
+  left: 0;
+  width: 35vw;
+  height: 3vw;
+  z-index: -5;
+} @media only screen and (max-width: 600px){
+  #cuadroAzul1 {
+    top: 30vw;
+    height: 10vw;
+    z-index: -50;
+  }
+}
+
+#cuadroRojo1{
+  background-color: #f5c6ec;
+  position: absolute;
+  top: 6vw;
+  left: 29vw;
+  width: 23vw;
+  height: 34vw;
+  z-index: -5;
+} @media only screen and (max-width: 1060px){
+  #cuadroRojo1{
+    top: 3vw;
+    left: 20vw;
+    width: 35vw;
+    height: 53vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #cuadroRojo1{
+    top: 5vw;
+    left: 5vw;
+    width: 55vw;
+    height: 83vw
+  }
+}
+
+#cuadroRojo2{
+  background-color: #ffedab;
+  position: absolute;
+  left: 5vw;
+  top: 2vw;
+  width: 28.5vw;
+  height: 21.5vw;
+  z-index: -5;
+} @media only screen and (max-width: 1060px) {
+  #cuadroRojo2 {
+    display: none
+  }
+} @media only screen and (max-width: 600px) {
+  #cuadroRojo2{
+    display: none
+  }
+}
+
+#videoFrame{
+  position: absolute;
+  /* background: #dedede; */
+  background-image: linear-gradient( #aae6de, #dedede, #dedede, #dedede);
+  z-index: -55;
+  top: 0;
+  left: 60vw;
+  width: 40vw;
+  height: 100%;
+  min-height: 45vw;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoFrame {
+    left: 61vw;
+    width: 39vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoFrame {
+    left: 56vw;
+    width: 44vw;
+  }
+}
+
+#videoStatic {
+  position: absolute;
+  z-index: -100;
+  top: 0vw;
+  left: 38vw;
+  height: 42vw;
+  width: auto;
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoStatic {
+    left: 0;
+    width: 61vw;
+    height: auto;
+    top: -15vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoStatic {
+    left: 0;
+    width: 80vw;
+    height: auto;
+    top: 15vw;
+  }
+}
+
+#videoInteractivo1 {
+  position: absolute;
+  z-index: -4;
+  /* top: 20vw;
+  left: 70vw; */
+  width: 27vw;
+  height: auto;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoInteractivo1 {
+    display: none
+  }
+} @media only screen and (max-width: 600px) {
+  #videoInteractivo1 {
+    display: none
+  }
+}
+
+#videoInteractivo {
+  position: absolute;
+  z-index: -4;
+  top: 20vw;
+  left: 68vw;
+  width: 32vw;
+  height: auto;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoInteractivo {
+    top: 60vw;
+    left: 52vw;
+    width: 48vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoInteractivo {
+    top: 122vw;
+    left: 32vw;
+    width: 68vw;
+  }
+}
+
+
+/* //////////////////////////////////////////////
+//////         Botones de carpetas         //////
+////////////////////////////////////////////// */
+
+#boton_texto{
+  margin-top: .5vw;
+}
+
+#boton1{
+  position: absolute;
+  left: 78vw;
+  top: 0vw;
+} @media only screen and (max-width: 1060px){
+  #boton1 {
+    left: 62vw;
+    top: 3vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton1 {
+    left: 72.5vw;
+    top: 0vw;
+  }
+}
+
+#boton2{
+  position: absolute;
+  left: 78vw;
+  top: 7vw;
+} @media only screen and (max-width: 1060px){
+  #boton2 {
+    left: 62vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton2 {
+    left: 72.5vw;
+    top: 25vw;
+  }
+}
+
+#boton3{
+  position: absolute;
+  left: 78vw;
+  top: 14vw;
+} @media only screen and (max-width: 1060px){
+  #boton3 {
+    left: 73vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton3 {
+    left: 72.5vw;
+    top: 50vw;
+  }
+}
+
+#boton4{
+  position: absolute;
+  left: 86vw;
+  top: 2vw;
+} @media only screen and (max-width: 1060px){
+  #boton4 {
+    left: 17vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton4 {
+    left: 12.5vw;
+    top: 150vw;
+  }
+}
+
+#boton5{
+  position: absolute;
+  left: 6vw;
+  top: 26.5vw;
+} @media only screen and (max-width: 1060px){
+  #boton5 {
+    left: 28vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton5 {
+    left: 35vw;
+    top: 150vw;
+    z-index: 10;
+  }
+}
+
+#boton6{
+  position: absolute;
+  left: 14vw;
+  top: 30vw;
+} @media only screen and (max-width: 1060px){
+  #boton6 {
+    left: 39vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton6 {
+    left: 5vw;
+    top: 173vw;
+  }
+}
+
+#boton7{
+  position: absolute;
+  left: 6vw;
+  top: 33.5vw;
+} @media only screen and (max-width: 1060px){
+  #boton7 {
+    left: 28vw;
+    top: 70vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton7 {
+    left: 27.5vw;
+    top: 173vw;
+  }
+}
+
+
+#boton8{
+  position: absolute;
+  left: 14vw;
+  top: 37vw;
+} @media only screen and (max-width: 1060px){
+  #boton8 {
+    left: 39vw;
+    top: 70vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton8 {
+    left: 50vw;
+    top: 173vw;
+  }
+}
+
+
+#boton9{
+  position: absolute;
+  left: 6vw;
+  top: 19.5vw;
+} @media only screen and (max-width: 1060px){
+  #boton9 {
+    left: 28vw;
+    top: 80vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton9 {
+    left: 72.5vw;
+    top: 173vw;
+  }
+}
+
+/* ---------------Carpeta------------------ */
+
+.botonRosa{
+  background:url(./carpetas_img/c_gris_vino.png) no-repeat;
+  background-size: 100% 100%;
+  cursor: pointer;
+  border: none;
+  width: 5vw;
+  height: 3.5vw;
+  font-family: DMSerif;
+} @media only screen and (max-width: 1060px){
+  .botonRosa {
+    width: 7.5vw;
+    height: 5.25vw;
+  }
+} @media only screen and (max-width: 600px){
+  .botonRosa {
+    width: 17vw;
+    height: 12vw;
+  }
+}
+
+.botonRosa:hover {
+    background:url(./carpetas_img/c_hover_vino.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonRosa:active {
+    background:url(./carpetas_img/c_click_vino.png) no-repeat;
+    background-size: cover;
+    button:focus {outline:0;}
+}
+
+.botonRosa:focus {
+  outline:0;
+}
