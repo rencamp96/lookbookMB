@@ -5,99 +5,95 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MBFWMX Lookbook</title>
-  <!-- <script src="../node_modules/p5/lib/p5.js"></script> -->
   <link rel="stylesheet" type="text/css" href="../css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
   <script src="../js/main.js"></script>
 </head>
 
 <body>
-  <div id="background"></div>
-  <div id = "center">
-    <div class="look1">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 1
-      <hr class="new1">
-      <img src="../assets/look2.png" style="width:20vw ;height:auto;">
-    </div>
-    <div class="look1_sombra"></div>
-    <div class="look2">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 2
-      <hr class="new1">
-      <img src="../assets/image03.jpg" style="width:20vw ;height:auto;">
-    </div>
-    <div class="look3">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 3
-      <hr class="new1">
-      <img src="../assets/look1.jpg" style="width:20vw ;height:auto;">
-    </div>
-    <div class="look4">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 4
-      <hr class="new1">
-      <img src="../assets/image03.jpg" style="width:22vw ;height:auto;">
-    </div>
-    <div class="look5">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 5
-      <hr class="new1">
-      <img src="../assets/look3.png" style="width:26vw ;height:auto;">
-    </div>
-    <div class="look6">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Look 6
-      <hr class="new1">
-      <img src="../assets/look4.png" style="width:22vw ;height:auto;">
-    </div>
-    <!-- <div id="sketch-holder"></div> -->
-    <div id="video-holder"><video id="video1" src="../assets/video_int3.mp4" type="video/mp4" autoplay muted loop></div>
-    <div class="alert1">
-      <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
-      Fall collection
-      <hr class="new1">
-      <h3 id="titulo">Nombre de la collección</h3>
-    </div>
-    <!--//////////// botones ////////////-->
-    <div id="boton10">
-      <button class="botonRosa" onclick="window.location.href='../index.html'"></button>
-      <h6 id="boton_texto"> Lorem impsum </h6>
-    </div>
-    <div id="boton11">
-      <button class="botonRosa" onclick="window.location.href='../index.html'"></button>
-      <h6 id="boton_texto"> Lorem impsum </h6>
-    </div>
-    <!--//////////// video interactivo ////////////-->
-    <div id="cuadroRojo1"></div>
-    <!-- <div id="cuadroVerde2"></div> -->
-    <div id="cuadroRojo2"></div>
+  <div id="container">
+    <div id="container2">
+      <div id="fondo_col"></div>
+      <div id="background"></div>
+      <!--////////////   Video e Información Inicial   ///////////-->
+      <div class="info_coleccion1">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Fall collection
+          <hr class="new1">
+          <h3 id="titulo">Nombre de la <br> collección</h3>
+      </div>
+      <div id="info_coleccion1_sombra"></div>
 
-    <!--//////////// video estática fondo ///////////-->
-    <video id="videoStatic1" autoplay muted loop>
-      <source src="../assets/static5.mp4" type="video/mp4">
-    </video>
-    <video id="videoStatic2" autoplay muted loop>
-      <source src="../assets/static5.mp4" type="video/mp4">
-    </video>
-    <div id="cuadro1"></div>
-    <div id="cuadro2"></div>
-    <div id="cuadro4"></div>
-    <div id="cuadro5"></div>
-    <div id="video-holder2"><video id="video2" src="../assets/coleccion1_1.mp4" type="video/mp4" autoplay muted loop></div>
-    <div id="video-holder3"><video id="video3" src="../assets/coleccion1_2.mp4" type="video/mp4" autoplay muted loop></div>
+      <div id="video_holder">
+        <video id="video_coleccion1" src="../assets/video_int3.mp4" type="video/mp4" autoplay muted loop>
+      </div>
+      <div id="video1_sombra"></div>
+
+      <div id="video-holder-movil"><video id="videoMovil" src="../assets/coleccion1_2.mp4" type="video/mp4" autoplay muted loop></div>
+
+      <div id="degradado1"></div>
+
+      <video id="videoStatic1" autoplay muted loop>
+        <source src="../assets/static5.mp4" type="video/mp4">
+      </video>
+
+      <!--////////////   Looks   ///////////-->
+      <div class="look1">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 1
+          <hr class="new1">
+          <img src="../assets/look2.png" style="width:38vh; height:auto;">
+      </div>
+      <div class="look1_sombra"></div>
+      <div class="look2">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 2
+          <hr class="new1">
+          <img src="../assets/image03.jpg" style="width:38vh; height:auto;">
+      </div>
+
+      <div class="look3">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 3
+          <hr class="new1">
+          <img src="../assets/look1.jpg" style="width:38vh; height:auto;">
+      </div>
+
+      <div id="video-holder2"><video id="video2" src="../assets/coleccion1_1.mp4" type="video/mp4" autoplay muted loop></div>
+
+      <div class="look4">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 4
+          <hr class="new1">
+          <img src="../assets/image03.jpg" style="width:43vh; height:auto;">
+      </div>
+      <div id="degradado2"></div>
+
+      <video id="videoStatic2" autoplay muted loop>
+        <source src="../assets/static5.mp4" type="video/mp4">
+      </video>
+
+      <div class="look5">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 5
+          <hr class="new1">
+          <img src="../assets/look3.png" style="width:48vh ;height:auto;">
+      </div>
+
+      <div class="look6">
+          <span class="closebtn" onclick="this.parentElement.style.display='none';">×</span>
+          Look 6
+          <hr class="new1">
+          <img src="../assets/look4.png" style="width:40vh; height:auto;">
+      </div>
+      <div id="degradado3"></div>
+      <div id="sombra_final"></div>
+
+      <div id="video-holder3"><video id="video3" src="../assets/coleccion1_2.mp4" type="video/mp4" autoplay muted loop></div>
+
+      <!--////////////   Botones   ///////////-->
+      <!-- <button class="botonRosa" onclick="window.location.href='../index.html'"></button> -->
+
+    </div>
   </div>
-  <div id="cuadro3"></div>
-
-  <!-- <div id="videoFrame"></div> -->
-
-  <!--//////////// cuadros de fondo ////////////-->
-  <!-- <div id="cuadroAzul1"></div>
-  <div id="cuadroRojo2"></div>-->
-  <div id="cuadroVerde1"></div>
-  <div id="cuadroVerde3"></div>
-  <div id="cuadroVerde3Frame"></div>
-  <!-- <div id="cuadroVerde4"></div>
-  <div id="cuadroVerde4Frame"></div> -->
 </body>
 </html>

@@ -30,6 +30,7 @@
 html, body{
   font-family: MontserratRegular;
   color: #bd0052;
+  margin:0;
 }
 
 #background{
@@ -74,15 +75,12 @@ h2 {
 h3 {
   color: #bd0052;
 	font-family: MontserratRegular;
-  font-size: 3.7vw;
+  font-size: 7vh;
   line-height: 1;
-} @media only screen and (max-width: 1060px) {
+} @media (orientation: portrait){
   h3 {
-    font-size: 3vw;
-  }
-} @media only screen and (max-width: 600px) {
-  h3 {
-    font-size: 4.8vw;
+    font-size: 4vh;
+    line-height: 1.2;
   }
 }
 
@@ -790,366 +788,195 @@ hr.new1 {
   outline:0;
 }
 
-
 /* //////////////////////////////////////////////
-//////             SUB-PÁGINAS             //////
+//////             Collección 1            //////
 ////////////////////////////////////////////// */
 
-#videoInteractivo2 {
-  position: absolute;
-  z-index: -4;
-  top: 25vw;
-  left: 92vw;
-  width: 32vw;
-  height: auto;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #videoInteractivo2 {
-    top: 60vw;
-    left: 52vw;
-    width: 48vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #videoInteractivo2 {
-    top: 122vw;
-    left: 32vw;
-    width: 68vw;
-  }
+#container {
+  overflow-y:scroll;
+  overflow-x:hidden;
+  transform: rotate(270deg) translateX(-100%);
+  transform-origin: top left;
+  background-color:#999;
+  position:absolute;
+  width:100vh;
+  height:100vw;
+}
+#container2 {
+  transform: rotate(90deg) translateY(-100vh);
+  transform-origin: top left;
+  white-space:nowrap;
+  font-size:0;
 }
 
-#video-holder{
+/* -----------   seccion 1   -----------*/
+
+.info_coleccion1{
+  display: inline-block;
+  padding: 1.5vh;
+  background-color: #dedede;
   position: absolute;
-  top: 0vw;
-  left: 7vw;
+  left: 50vh;
+  top: 59vh;
+  color: #bd0052;
   border: 2px solid #bd0052;
-  width: 45vw;
-  height: 30.8vw;
-} @media only screen and (max-width: 1060px){
-  #video-holder{
-    top: 0vw;
-    left: 17vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #video-holder{
-    top: 0vw;
-    left: 10vw;
-    width: 55vw;
-    height: 82vw;
+  width: 63vh;
+  height: 25vh;
+  z-index: 10;
+  font-size: 1.7vh;
+} @media (orientation: portrait){
+  .info_coleccion1{
+    top: 46vh;
+    left: 2vh;
+    width: 32vh;
+    height: 14vh;
   }
 }
 
-#video1 {
+#video_coleccion1{
   position: absolute;
   z-index: -4;
-  /* top: 20vw;
-  left: 70vw; */
-  width: 45vw;
-  height: auto;
+  height: 55vh;
+  width: auto;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #video1  {
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  #video1  {
-    display: none
+} @media (orientation: portrait){
+  #video_coleccion1{
+    height: 36vh;
   }
 }
 
-#video-holder2{
-  position: absolute;
-  top: 29vw;
-  left: 80vw;
-  border: 2px solid #bd0052;
-  width: 33vw;
-  height: 13.7vw;
-  z-index: -15;
-} @media only screen and (max-width: 1060px){
-  #video-holder2{
-    top: 0vw;
-    left: 17vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #video-holder2{
-    top: 0vw;
-    left: 10vw;
-    width: 55vw;
-    height: 82vw;
-  }
-}
-
-#video2 {
-  position: absolute;
-  z-index: -4;
-  /* top: 20vw;
-  left: 70vw; */
-  width: 33vw;
-  height: auto;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #video2  {
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  #video2  {
-    display: none
-  }
-}
-
-#video-holder3{
-  position: absolute;
-  top: 0vw;
-  left: 163vw;
-  border: 2px solid #bd0052;
-  width: 33vw;
-  height: 13.7vw;
-  z-index: -15;
-} @media only screen and (max-width: 1060px){
-  #video-holder3{
-    top: 0vw;
-    left: 17vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #video-holder3{
-    top: 0vw;
-    left: 10vw;
-    width: 55vw;
-    height: 82vw;
-  }
-}
-
-#video3 {
-  position: absolute;
-  z-index: -4;
-  /* top: 20vw;
-  left: 70vw; */
-  width: 33vw;
-  height: auto;
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #video3  {
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  #video3  {
-    display: none
-  }
-}
-
-
-#cuadro1{
-  background-color: #f5c6ec;
-  position: absolute;
-  top: 2vw;
-  left: 5vw;
-  width: 45vw;
-  height: 31.3vw;
-  z-index: -5;
-} @media only screen and (max-width: 1060px){
-  #cuadro1{
-    top: 3vw;
-    left: 20vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #cuadro1{
-    top: 5vw;
-    left: 5vw;
-    width: 55vw;
-    height: 83vw
-  }
-}
-
-#cuadro2{
+#info_coleccion1_sombra{
   background-color: #ffedab;
   position: absolute;
-  left: 22vw;
-  top: 29vw;
-  width: 32vw;
-  height: 13vw;
+  left: 45vh;
+  top: 70vh;
+  width: 65vh;
+  height: 20vh;
   z-index: 0;
-} @media only screen and (max-width: 1060px){
-  #cuadro2{
-    top: 3vw;
-    left: 20vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #cuadro2{
-    top: 5vw;
-    left: 5vw;
-    width: 55vw;
-    height: 83vw
+} @media (orientation: portrait){
+  #info_coleccion1_sombra{
+    top: 51vh;
+    left: 4vh;
+    width: 36vh;
+    height: 15vh;
   }
 }
 
-#cuadro3{
+#video_holder{
+  top: 10vh;
   position: absolute;
-  /* background: #dedede; */
-  background-image: linear-gradient( #f5c6ec, #f5c6ec, #dedede);
-  z-index: -5000;
-  top: 0;
-  left: 95vw;
-  width: 20vw;
-  height: 35vw;
-  overflow-x: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #cuadro3{
-    height: 100vw;
-    min-height: 100vh;
-    width: 23vw;
-  }
-} @media only screen and (max-width: 600px){
-  #cuadro3{
-    width: 0;
-    height: 0;
-  }
-}
-
-#cuadro4{
-  background-color: #aae6de;
-  position: absolute;
-  left: 129vw;
-  top: 1.5vw;
-  width: 60vw;
-  height: 30vw;
-  z-index: -100;
-} @media only screen and (max-width: 1060px){
-  #cuadro4{
-    top: 3vw;
-    left: 20vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #cuadro4{
-    top: 5vw;
-    left: 5vw;
-    width: 55vw;
-    height: 83vw
-  }
-}
-#cuadro5{
-  background-color: #dedede;
-  position: absolute;
-  left: 138vw;
-  top: 1.5vw;
-  width: 60vw;
-  height: 30vw;
-  z-index: -120;
-} @media only screen and (max-width: 1060px){
-  #cuadro5{
-    top: 3vw;
-    left: 20vw;
-    width: 35vw;
-    height: 53vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #cuadro5{
-    top: 5vw;
-    left: 5vw;
-    width: 55vw;
-    height: 83vw
-  }
-}
-
-.alert1 {
-  display: inline-block;
-  padding: .5vw;
-  background-color: #dedede;
-  position: absolute;
-  left: 24vw;
-  top: 26vw;
-  color: #bd0052;
+  left: 10vh;
   border: 2px solid #bd0052;
-  width: 32vw;
-  height: 13vw;
-  z-index: 10;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
-  .alert1 {
-    padding: 1vw;
-    width: 35vw;
-    height: 15vw;
-    left: 44vw;
-    top: 23vw;
-    font-size: 1.2vw;
-  }
-} @media only screen and (max-width: 600px) {
-  .alert1 {
-    padding: 1vw;
-    top: 93vw;
-    left: 5vw;
-    width: 65vw;
-    height: 27vw;
-    font-size: 2.5vw;
+  width: 80vh;
+  height: 55vh;
+  z-index: 0;
+} @media (orientation: portrait){
+  #video_holder{
+    height: 36vh;
+    width: 52.3vh;
+    top: 15vh;
+    left: 7vh;
   }
 }
 
-#boton10{
+#video1_sombra{
+  background-color: #f5c6ec;
   position: absolute;
-  left: 7vw;
-  top: 35.5vw;
-} @media only screen and (max-width: 1060px){
-  #boton10{
-    left: 28vw;
-    top: 80vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton10{
-    left: 72.5vw;
-    top: 173vw;
+  top: 15vh;
+  left: 6vh;
+  width: 80vh;
+  height: 55vh;
+  z-index: -5;
+} @media (orientation: portrait){
+  #video1_sombra{
+    height: 40vh;
+    width: 58vh;
+    top: 12vh;
+    left: 4vh;
   }
 }
 
-#boton11{
-  position: absolute;
-  left: 15vw;
-  top: 35.5vw;
-} @media only screen and (max-width: 1060px){
-  #boton11{
-    left: 28vw;
-    top: 80vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton11{
-    left: 72.5vw;
-    top: 173vw;
+#video-holder-movil{
+  display: none;
+} @media (orientation: portrait){
+  #video-holder-movil{
+    display: inline-block;
+    position: absolute;
+    top: 69vh;
+    left: 6vh;
+    border: 2px solid #bd0052;
+    width: 37.5vh;
+    height: 15.7vh;
+    z-index: -15;
   }
 }
+
+#videoMovil{
+  display: none;
+} @media (orientation: portrait){
+  #videoMovil{
+    display: inline-block;
+    position: absolute;
+    z-index: -4;
+    width: auto;
+    height: 15.7vh;
+  }
+}
+
+#degradado1{
+  background-image: linear-gradient(-90deg, #aae6de, #aae6de, #f5c6ec);
+  position: absolute;
+  height: 20vh;
+  left: 0;
+  width: 103vh;
+  top: 80vh;
+  z-index: -102;
+} @media (orientation: portrait){
+  #degradado1{
+    height: 13vh;
+    top: 88vh;
+  }
+}
+
+#videoStatic1 {
+  position: absolute;
+  z-index: -100;
+  top: 15vh;
+  left: 90vh;
+  height: 65vh;
+  width: auto;
+  overflow-x: hidden !important;
+} @media (orientation: portrait) {
+  #videoStatic1 {
+  top: 7vh;
+  left: 29vh;
+  z-index: -500;
+  }
+}
+
+
+
+
+/* ____________________________________ */
+/* -----------   seccion 2   ----- -----*/
+/* ____________________________________ */
 
 .look1{
+  left: 127vh;
+  top: 24.5vh;
   display: inline-block;
-  padding: 1vw;
+  padding: 1.5vh;
   background-color: #dedede;
   position: absolute;
-  left: 68vw;
-  top: 6vw;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 20vw;
-  height: 32vw;
+  height: 62vh;
   z-index: 10;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  font-size: 1.7vh;
+} @media (orientation: portrait){
   .look1 {
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  .look1{
-    display: none
+    left: 50vh;
   }
 }
 
@@ -1157,183 +984,227 @@ hr.new1 {
   background-color: #aae6de;
   display: inline-block;
   position: absolute;
-  left: 71vw;
-  top: 9vw;
-  width: 21vw;
-  height: 33vw;
   z-index: -100;
-} @media only screen and (max-width: 1060px) {
+  left: 145vh;
+  top: 5.5vh;
+  height: 61vh;
+  width: 40vh;
+} @media (orientation: portrait) {
   .look1_sombra{
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  .look1_sombra{
-    display: none
+    left: 68vh;
   }
 }
 
 .look2{
+  left: 133vh;
+  top: 17.25vh;
   display: inline-block;
-  padding: 1vw;
+  padding: 1.5vh;
   background-color: #dedede;
   position: absolute;
-  left: 65vw;
-  top: 3vw;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 20vw;
-  height: 32vw;
+  height: 61vh;
   z-index: 5;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  font-size: 1.7vh;
+} @media (orientation: portrait) {
   .look2 {
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  .look2{
-    display: none
+    left: 56vh;
   }
 }
 
 .look3{
+  left: 139vh;
+  top: 10vh;
   display: inline-block;
-  padding: 1vw;
+  padding: 1.5vh;
   background-color: #dedede;
   position: absolute;
-  left: 62vw;
-  top: 0vw;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 20vw;
-  height: 32vw;
+  height: 61vh;
   z-index: 0;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  font-size: 1.7vh;
+} @media (orientation: portrait){
   .look3 {
-    display: none
+    left: 62vh;
   }
-} @media only screen and (max-width: 600px) {
-  .look3{
-    display: none
+}
+
+#video-holder2{
+  position: absolute;
+  top: 57vh;
+  left: 157vh;
+  border: 2px solid #bd0052;
+  width: 67.3vh;
+  height: 28vh;
+  z-index: -15;
+} @media (orientation: portrait){
+  #video-holder2{
+    left: 80vh;
+  }
+}
+
+#video2 {
+  position: absolute;
+  z-index: -4;
+  width: auto;
+  height: 28vh;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media (orientation: portrait){
+  #video2  {
   }
 }
 
 .look4{
   display: inline-block;
-  padding: 1vw;
   background-color: #dedede;
   position: absolute;
-  left: 100vw;
-  top: 0vw;
+  left: 203vh;
+  top: 10vh;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 22vw;
-  height: 35vw;
+  height: 68.5vh;
   z-index: 0;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  padding: 1.5vh;
+  font-size: 1.7vh;
+} @media (orientation: portrait){
   .look4{
-    display: none
+    left: 126vh;
   }
-} @media only screen and (max-width: 600px) {
-  .look4{
-    display: none
+}
+
+#degradado2{
+  position: absolute;
+  background-image: linear-gradient( #f5c6ec, #f5c6ec, #dedede);
+  z-index: -5000;
+  top: 0;
+  left: 190vh;
+  width: 40vh;
+  height: 50vh;
+  overflow-x: hidden !important;
+} @media (orientation: portrait){
+  #degradado2{
+    left: 113vh;
+  }
+}
+
+#videoStatic2 {
+  position: absolute;
+  z-index: -100;
+  top: 28vh;
+  left: 210vh;
+  height: 65vh;
+  width: auto;
+  overflow-x: hidden !important;
+} @media (orientation: portrait){
+  #videoStatic2 {
+    left: 133vh;
   }
 }
 
 .look5{
   display: inline-block;
-  padding: 1vw;
   background-color: #dedede;
   position: absolute;
-  left: 131vw;
-  top: 0vw;
+  left: 259vh;
+  top: 10vh;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 26vw;
-  height: 41vw;
+  height: 75.7vh;
   z-index: 0;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  padding: 1.5vh;
+  font-size: 1.7vh;
+} @media (orientation: portrait){
   .look5{
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  .look5{
-    display: none
+    left: 182vh;
   }
 }
 
 .look6{
   display: inline-block;
-  padding: 1vw;
   background-color: #dedede;
   position: absolute;
-  left: 150vw;
-  top: 3.7vw;
+  left: 295vh;
+  top: 17.5vh;
   color: #bd0052;
   border: 2px solid #bd0052;
-  width: 22vw;
-  height: 35vw;
+  height: 65vh;
   z-index: 0;
-  font-size: .7vw;
-} @media only screen and (max-width: 1060px) {
+  padding: 1.5vh;
+  font-size: 1.7vh;
+} @media (orientation: portrait){
   .look6{
-    display: none
-  }
-} @media only screen and (max-width: 600px) {
-  .look6{
-    display: none
+    left: 218vh;
   }
 }
 
-#videoStatic1 {
+#sombra_final{
+  background-color: #aae6de;
   position: absolute;
+  left: 254vh;
+  top: 5vh;
+  width: 100vh;
+  height: 65vh;
   z-index: -100;
-  top: 3vw;
-  left: 40vw;
-  height: 33vw;
-  width: auto;
-  overflow-x: hidden !important;
-} @media only screen and (max-width: 1060px){
-  #videoStatic1 {
-    left: 0;
-    width: 61vw;
-    height: auto;
-    top: -15vw;
-  }
-} @media only screen and (max-width: 600px) {
-  #videoStatic1 {
-    left: 0;
-    width: 80vw;
-    height: auto;
-    top: 15vw;
+} @media (orientation: portrait){
+  #sombra_final{
+    left: 177vh;
   }
 }
-  #videoStatic2 {
-    position: absolute;
-    z-index: -100;
-    top: 7vw;
-    left: 110vw;
-    height: 33vw;
-    width: auto;
-    overflow-x: hidden !important;
-  } @media only screen and (max-width: 1060px){
-    #videoStatic2 {
-      left: 0;
-      width: 61vw;
-      height: auto;
-      top: -15vw;
-    }
-  } @media only screen and (max-width: 600px) {
-    #videoStatic2 {
-      left: 0;
-      width: 80vw;
-      height: auto;
-      top: 15vw;
-    }
 
-img {
-  width: 20vw;
-  height: 10vw;
+#degradado3{
+  position: absolute;
+  background-image: linear-gradient( #dedede, #ffedab);
+  z-index: -5000;
+  top: 60vh;
+  left: 300vh;
+  width: 65vh;
+  height: 50vh;
+  overflow-x: hidden !important;
+} @media (orientation: portrait){
+  #degradado3{
+    left: 223vh;
+  }
+}
+
+#video-holder3{
+  position: absolute;
+  top: 10vh;
+  left: 320vh;
+  border: 2px solid #bd0052;
+  width: 67.3vh;
+  height: 28vh;
+  z-index: -15;
+} @media (orientation: portrait){
+  #video-holder3{
+    left: 243vh;
+  }
+}
+
+#video3 {
+  position: absolute;
+  z-index: -4;
+  width: auto;
+  height: 28vh;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media (orientation: portrait){
+  #video3  {
+  }
+}
+
+#fondo_col{
+  background-color: #dedede;
+  position: absolute;
+  left: 0vw;
+  top: 0;
+  width: 394vh;
+  height: 100vh;
+  z-index: -10000;
+} @media (orientation: portrait){
+  #fondo_col{
+    width: 317vh;
+  }
 }
