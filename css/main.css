@@ -163,13 +163,7 @@ p {
   border-style:outset;
   background-color: #bad9c8;
 }
-.closebtn:hover {
-  color: #EBD2B4;
-}
 
-hr.new1 {
-  border-top: .1vw solid #ffffff;
-}
 
 /* //////////////////////////////////////////////
 //////         Ventanas cerrables 2         //////
