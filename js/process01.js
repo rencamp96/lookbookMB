@@ -1,24 +1,23 @@
 window.addEventListener("load", function (e) {
 
-    var path = window.location.pathname;
-    var page = path.split("/").pop();
-    var n = page.split(".")[0];
+    let path = window.location.pathname;
+    let page = path.split("/").pop();
+    let n = page.split(".")[0];
 
-    var looks = document.getElementsByClassName("looks");
-    for (var i = 0; i < looks.length; i++) {
+    let looks = document.getElementsByClassName("looks");
+    for (let i = 0; i < looks.length; i++) {
         looks[i].src = "../assets/" + n + "/" + (i + 1) + ".jpg";
     }
 
-    var anim = document.getElementById("video_coleccion1");
+    let anim = document.getElementById("video_coleccion1");
     anim.src = "../assets/designers/" + n + ".mp4";
 
 
-    var rand = Math.round(Math.random() * 13);
-    var v2 = document.getElementById("video2");
+    let rand = Math.round(Math.random() * 13) + 1;
+    let v2 = document.getElementById("video2");
     v2.src = "../assets/interiors/interior" + rand + ".mp4";
 
-    var v3 = document.getElementById("video3");
-    rand = Math.round(Math.random() * 13);
+    let v3 = document.getElementById("video3");
+    rand = Math.round(Math.random() * 13) + 1;
     v3.src = "../assets/interiors/interior" + rand + ".mp4";
-
 });
