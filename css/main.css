@@ -168,7 +168,6 @@ p {
   height: 12.5vw;
   z-index: 10;
   font-size: .9vw;
-  padding-left: 1vw;
 } @media only screen and (max-width: 1060px) {
   .alert {
     padding: 1vw;
@@ -199,7 +198,7 @@ p {
   margin: 0vw;
   padding: 0 .2vh 0 .2vh;
   border-style: outset;
-  background-color: #bad9c8;
+  background-color: #b3c9c3;
 }
 
 .closebtn:hover {
@@ -216,7 +215,7 @@ p {
   margin: 0vw;
   padding: 0 .1vw 0 .1vw;
   border-style: outset;
-  background-color: #bad9c8;
+  background-color: #b3c9c3;
 }
 
 .closebtn_index:hover {
@@ -285,11 +284,24 @@ hr.new1 {
 
 #titulo {
   text-align: right;
-  padding-top:2vw;
+  padding-top:4vh;
   margin: 0;
   padding-right: .5vw;
 } @media only screen and (max-width: 600px){
   #titulo {
+    padding-top: 3vw;
+    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+#titulo_index {
+  text-align: right;
+  padding-top:2vw;
+  margin: 0;
+  padding-right: .5vw;
+} @media only screen and (max-width: 600px){
+  #titulo_index {
     padding-top: 3vw;
     text-align: left;
     padding-left: .5vw;
@@ -375,13 +387,12 @@ hr.new1 {
 }
 
 #cuadroVerde2{
-  /* opacity: .7; */
   background-color: #52ff60;
   position: absolute;
   top: 10vw;
   left: 46vw;
-  width: 28.5vw;
-  height: 13.5vw;
+  width: 28.2vw;
+  height: 13.7vw;
   z-index: 0;
 } @media only screen and (max-width: 1060px){
   #cuadroVerde2{
@@ -402,7 +413,7 @@ hr.new1 {
 
 #cuadroVerde3{
   opacity: .4;
-  background-image: linear-gradient(-90deg, #566def, #566def, #f867e9, #52ff60);
+  background-image: linear-gradient(-90deg, #394589, #566def, #f867e9, #52ff60);
   position: absolute;
   height: 100%;
   min-height: 45vw;
@@ -882,6 +893,58 @@ hr.new1 {
 
 /* -----------   seccion 1   -----------*/
 
+.regresar1{
+  border-color: white;
+  background-color: #b3c9c3;
+  color: #303030;
+  padding: .5vh 5vh;
+  border-style: outset;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5vh;
+  cursor: pointer;
+  position: absolute;
+  top: 72vh;
+  left: 7.5vh;
+  font-family: MontserratMedium;
+} @media (orientation: portrait){
+  .regresar{
+    top: 81.5vh;
+    left: 7.5vh;
+  }
+}
+
+.regresar1:hover {
+  background-color: #94ab9e;
+  color: #ffffff;
+}
+
+.regresar2{
+  border-color: white;
+  background-color: #b3c9c3;
+  color: #303030;
+  padding: .5vh 5vh;
+  border-style: outset;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.5vh;
+  cursor: pointer;
+  position: absolute;
+  top: 42vh;
+  left: 342vh;
+  font-family: MontserratMedium;
+} @media (orientation: portrait){
+  .regresar{
+    top: 81.5vh;
+    left: 7.5vh;
+  }
+}
+
+.regresar2:hover {
+  background-color: #94ab9e;
+  color: #ffffff;
+}
+
 .info_coleccion1{
   display: inline-block;
   padding: 1.5vh;
@@ -893,14 +956,14 @@ hr.new1 {
   border: 1px solid #ffffff;
   width: 62vh;
   height: 25vh;
-  z-index: 10;
+  z-index: 15;
   font-size: 1.7vh;
 } @media (orientation: portrait){
   .info_coleccion1{
-    top: 46vh;
+    top: 60vh;
     left: 2vh;
     width: 32vh;
-    height: 14vh;
+    height: 16vh;
   }
 }
 
@@ -913,7 +976,11 @@ hr.new1 {
   overflow-y: hidden !important;
 } @media (orientation: portrait){
   #video_coleccion1{
-    height: 36vh;
+    height: 58vh;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -921,15 +988,17 @@ hr.new1 {
   background-color: #566def;
   position: absolute;
   left: 48vh;
-  top: 65.5vh;
+  top: 62.5vh;
   width: 65vh;
-  height: 23.5vh;
+  height: 26.5vh;
+  z-index: 9;
 } @media (orientation: portrait){
   #info_coleccion1_sombra{
-    top: 51vh;
-    left: 4vh;
-    width: 36vh;
-    height: 15vh;
+    z-index: 12;
+    top: 62vh;
+    left: 4.2vh;
+    width: 35vh;
+    height: 19vh;
   }
 }
 
@@ -938,15 +1007,17 @@ hr.new1 {
   position: absolute;
   left: 10vh;
   border: 1px solid #ffffff;
-  width: 80vh;
+  width: 79vh;
   height: 55vh;
-  z-index: 0;
+  z-index: 10;
+  overflow:hidden;
+  display:block;
 } @media (orientation: portrait){
   #video_holder{
-    height: 36vh;
-    width: 52.3vh;
-    top: 15vh;
-    left: 7vh;
+    height: 58vh;
+    width: 37vh;
+    top: 13vh;
+    left: 6vh;
   }
 }
 
@@ -957,42 +1028,16 @@ hr.new1 {
   left: 7.5vh;
   width: 80vh;
   height: 55vh;
-  z-index: -5;
+  z-index: 5;
 } @media (orientation: portrait){
   #video1_sombra{
-    height: 40vh;
-    width: 58vh;
-    top: 12vh;
-    left: 4vh;
+    height: 58vh;
+    width: 36.5vh;
+    top: 11vh;
+    left: 4.2vh;
   }
 }
 
-#video-holder-movil{
-  display: none;
-} @media (orientation: portrait){
-  #video-holder-movil{
-    display: inline-block;
-    position: absolute;
-    top: 69vh;
-    left: 6vh;
-    border: 1px solid #ffffff;
-    width: 37.5vh;
-    height: 15.7vh;
-    z-index: -15;
-  }
-}
-
-#videoMovil{
-  display: none;
-} @media (orientation: portrait){
-  #videoMovil{
-    display: inline-block;
-    position: absolute;
-    z-index: -4;
-    width: auto;
-    height: 15.7vh;
-  }
-}
 
 #degradado1{
   opacity: .4;
@@ -1014,15 +1059,15 @@ hr.new1 {
   position: absolute;
   z-index: -100;
   top: 15vh;
-  left: 90.75vh;
+  left: 89vh;
   height: 65vh;
   width: auto;
   overflow-x: hidden !important;
 } @media (orientation: portrait) {
   #videoStatic1 {
-  top: 7vh;
-  left: 29vh;
-  z-index: -500;
+  top: 21vh;
+  left: 21vh;
+  z-index: -500 !important;
   }
 }
 
@@ -1047,7 +1092,7 @@ hr.new1 {
   font-size: 1.7vh;
 } @media (orientation: portrait){
   .look1 {
-    left: 50vh;
+    left: 48vh;
   }
 }
 
@@ -1056,8 +1101,8 @@ hr.new1 {
   display: inline-block;
   position: absolute;
   z-index: -10;
-  left: 142.5vh;
-  top: 7vh;
+  left: 142vh;
+  top: 7.5vh;
   height: 61vh;
   width: 41vh;
 } @media (orientation: portrait) {
@@ -1104,6 +1149,7 @@ hr.new1 {
 
 #video-holder2{
   position: absolute;
+  overflow: hidden;
   top: 57vh;
   left: 157vh;
   border: 1px solid #ffffff;
@@ -1217,7 +1263,7 @@ hr.new1 {
   position: absolute;
   left: 256vh;
   top: 7vh;
-  width: 100vh;
+  width: 92vh;
   height: 65vh;
   z-index: -100;
 } @media (orientation: portrait){
@@ -1243,6 +1289,7 @@ hr.new1 {
 }
 
 #video-holder3{
+  overflow: hidden;
   position: absolute;
   top: 10vh;
   left: 320vh;
