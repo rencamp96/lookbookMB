@@ -32,21 +32,19 @@ function windowResized() {
 
 	// --------- Center Landing Page Horizontally -----------
 
-	var contentHeight = document.getElementById("cuadroRojo1").offsetHeight;
 	var totalHeight = document.documentElement.scrollHeight;
-	margin = (totalHeight - (contentHeight / 5 * 6.5)) / 2;
-	marginMedium = (totalHeight - (contentHeight / 5 * 9)) / 2;
-	marginMovil = (totalHeight - (contentHeight / 5 * 12)) / 2;
+	var contentHeight = document.getElementById("cuadroRojo1").offsetHeight;
 
 	// --------- Center Content Media Queries -----------
 
-	if (window.innerWidth >= 1060) {
+	if (window.innerWidth >= 1061) {
+		margin = (totalHeight - (contentHeight / 5 * 6.5)) / 2;
 		document.getElementById('center').style.top = margin + 'px';
 	}
 	if (window.innerWidth <= 1060 && window.innerWidth >= 600) {
-		document.getElementById('center').style.top = marginMedium + 'px';
+		marginMedium = (totalHeight - (contentHeight / 5 * 9)) / 2;
 	}
 	if (window.innerWidth <= 600) {
-		document.getElementById('center').style.top = 10 + 'vw';
+		marginMovil = (totalHeight - (contentHeight / 5 * 12)) / 2;
 	}
 }

@@ -33,13 +33,18 @@ html, body{
   font-family: MontserratRegular;
   color: #ffffff;
   margin:0;
+  height: 100%;
+  min-height: 100%
+  padding:0;
+  margin:0;
+  position:relative;
 }
 
 video::-internal-media-controls-overlay-cast-button {
        display: none;
 }
 
-#background{
+#bg{
   background-color: #303030;
   position: fixed;
   top:0;
@@ -127,6 +132,67 @@ p {
   position: relative;
 }
 
+#asdf{
+  background-color: red;
+
+}
+
+#foot{
+  background-color: #94ab9e;
+  border-style: groove none none none;
+  border-color: #ffffff;
+  position: absolute;
+  left: 0;
+  width: 100vw;
+  height: 4.5vh;
+  top: 95.5vh;
+  z-index: 50000;
+} @media only screen and (max-width: 1060px) {
+  #foot{
+    position: fixed;
+  }
+} @media only screen and (max-width: 600px) {
+  #foot{
+    position: absolute;
+    top:216vw;
+    height: 10vw;
+  }
+}
+
+.logo{
+  padding-top: 1.1vh;
+  height: 1.9vh;
+  width: auto;
+  padding-left: 2vw;
+} @media only screen and (max-width: 1060px) {
+  .logo{
+  }
+} @media only screen and (max-width: 600px) {
+  .logo{
+    padding-right: 8.1vw;
+    float: right;
+    padding-top: 3.2vw;
+    height: 2.8vw;
+  }
+}
+
+.logo2{
+  float: right;
+  padding-top: 1.1vh;
+  height: 1.9vh;
+  width: auto;
+  padding-right: 2vw;
+} @media only screen and (max-width: 1060px) {
+  .logo2{
+  }
+} @media only screen and (max-width: 600px) {
+  .logo2{
+    padding-right: 8.1vw;
+    float: right;
+    padding-top: 3.2vw;
+    height: 2.8vw;
+  }
+}
 
 /* //////////////////////////////////////////////
 //////         Ventanas cerrable 1         //////
