@@ -38,6 +38,7 @@ html, body{
   padding:0;
   margin:0;
   position:relative;
+  overflow-y: hidden;
 }
 
 video::-internal-media-controls-overlay-cast-button {
@@ -1166,7 +1167,7 @@ hr.new1 {
   z-index: -102;
 } @media (orientation: portrait){
   #degradado1{
-    height: 12vh;
+    height: 15vh;
     top: 85vh;
   }
 }
@@ -1412,6 +1413,7 @@ hr.new1 {
   #degradado3{
     left: 223vh;
     top: 57vh;
+    height: 43vh;
   }
 }
 
