@@ -1010,24 +1010,17 @@ hr.new1 {
 
 /* -----------   seccion 1   -----------*/
 
-.regresar1{
-  border-color: white;
-  background-color: #b3c9c3;
-  color: #303030;
-  padding: .5vh 5vh;
-  border-style: outset;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.5vh;
-  cursor: pointer;
+.scroll_gif{
+  opacity: .9;
   position: absolute;
-  top: 72vh;
-  left: 7.5vh;
-  font-family: MontserratMedium;
+  display: none;
+  height: 3.5vh;
+  width:auto;
 } @media (orientation: portrait){
-  .regresar1{
+  .scroll_gif{
+    display: inline-block;
     top: 83vh;
-    left: 21.5vh;
+    left: 34vh;
   }
 }
 
@@ -1053,7 +1046,7 @@ hr.new1 {
 } @media (orientation: portrait){
   .regresar2{
     top: 39vh;
-    left: 265vh;
+    left: 264vh;
   }
 }
 
@@ -1093,7 +1086,7 @@ hr.new1 {
   overflow-y: hidden !important;
 } @media (orientation: portrait){
   #video_coleccion1{
-    height: 58vh;
+    height: 59vh;
     left: 50%;
     position: absolute;
     top: 50%;
@@ -1133,7 +1126,7 @@ hr.new1 {
   #video_holder{
     height: 58vh;
     width: 37vh;
-    top: 6.5vh;
+    top: 6vh;
     left: 6vh;
   }
 }
@@ -1160,24 +1153,42 @@ hr.new1 {
   opacity: .4;
   background-image: linear-gradient(-90deg, #394589, #566def, #566def, #f867e9,#52ff60);
   position: absolute;
-  height: 20vh;
+  height: 17vh;
   left: 0;
-  width: 103vh;
-  top: 80vh;
+  width: 90vh;
+  top: 83vh;
   z-index: -102;
 } @media (orientation: portrait){
   #degradado1{
-    height: 15vh;
-    top: 85vh;
+    width: 89vh;
+    height: 8vh;
+    top: 92vh;
+  }
+}
+
+#degradado1_2{
+  opacity: .5;
+  background-image: linear-gradient(-90deg, #303030, #303030, #566def);
+  position: absolute;
+  height: 14vh;
+  top: 78vh;
+  left: 0;
+  width: 90vh;
+  z-index: -102;
+} @media (orientation: portrait){
+  #degradado1_2{
+    height: 6.5vh;
+    top: 89vh;
+    width: 89vh;
   }
 }
 
 #videoStatic1 {
   position: absolute;
-  z-index: -100;
+  z-index: -1000!important;
   top: 15vh;
   left: 89vh;
-  height: 65vh;
+  height: 68vh;
   width: auto;
   overflow-x: hidden !important;
 } @media (orientation: portrait) {
@@ -1204,9 +1215,9 @@ hr.new1 {
   position: absolute;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 62vh;
   z-index: 10;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look1 {
     left: 48vh;
@@ -1221,12 +1232,12 @@ hr.new1 {
   z-index: -10;
   left: 142vh;
   top: 7.5vh;
-  height: 61vh;
   width: 41vh;
+  height: 61vh;
 } @media (orientation: portrait) {
   .look1_sombra{
-    left: 68vh;
-    top: 4.5vh;
+    left: 64.5vh;
+    top: 4vh;
   }
 }
 
@@ -1239,13 +1250,13 @@ hr.new1 {
   position: absolute;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 61vh;
   z-index: 5;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait) {
   .look2 {
-    left: 56vh;
-    top: 14.25vh;
+    left: 55vh;
+    top: 13.75vh;
   }
 }
 
@@ -1258,13 +1269,13 @@ hr.new1 {
   position: absolute;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 61vh;
   z-index: 0;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look3 {
     left: 62vh;
-    top: 7vh;
+    top: 6vh;
   }
 }
 
@@ -1304,10 +1315,10 @@ hr.new1 {
   top: 10vh;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 68.5vh;
   z-index: 0;
   padding: 1.5vh;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look4{
     left: 126vh;
@@ -1316,13 +1327,13 @@ hr.new1 {
 }
 
 #degradado2{
-  opacity: .4;
+  opacity: .2;
   position: absolute;
   background-image: linear-gradient( #f867e9, #f867e9, #303030);
   z-index: -5000;
   top: 0;
   left: 190vh;
-  width: 40vh;
+  width: 18vh;
   height: 50vh;
   overflow-x: hidden !important;
 } @media (orientation: portrait){
@@ -1354,10 +1365,10 @@ hr.new1 {
   top: 10vh;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 75.7vh;
   z-index: 0;
   padding: 1.5vh;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look5{
     left: 182vh;
@@ -1373,10 +1384,10 @@ hr.new1 {
   top: 17.5vh;
   color: #ffffff;
   border: 1px solid #ffffff;
-  height: 65vh;
   z-index: 0;
   padding: 1.5vh;
   font-size: 1.7vh;
+  padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look6{
     left: 218vh;
@@ -1404,16 +1415,30 @@ hr.new1 {
   position: absolute;
   background-image: linear-gradient( #303030, #52ff60);
   z-index: -5000;
-  top: 60vh;
-  left: 300vh;
-  width: 65vh;
-  height: 40vh;
+  top: 40vh;
+  left: 342vh;
+  width: 20vh;
+  height: 60vh;
   overflow-x: hidden !important;
 } @media (orientation: portrait){
   #degradado3{
-    left: 223vh;
-    top: 57vh;
-    height: 43vh;
+    left: 265vh;
+  }
+}
+
+#degradado3_2{
+  opacity: .4;
+  position: absolute;
+  background-image: linear-gradient( #303030, #303030, #566def, #566def, #f867e9);
+  z-index: -5000;
+  top: 40vh;
+  left: 335vh;
+  width: 16vh;
+  height: 60vh;
+  overflow-x: hidden !important;
+} @media (orientation: portrait){
+  #degradado3_2{
+    left: 257vh;
   }
 }
 
