@@ -177,18 +177,20 @@ p {
   height: 4.5vh;
   top: 95.5vh;
   z-index: 50000;
-  padding-left: 35vw;
+  padding-left: 20vw;
 } @media only screen and (max-width: 1060px) {
   #foot{
     top: 94vh;
     height: 6vh;
     position: fixed;
+    padding-left: 9vw;
   }
 } @media only screen and (max-width: 600px) {
   #foot{
     position: absolute;
     top:225vw;
     height: 10vw;
+    padding-left: 0vw;
   }
 }
 
@@ -196,16 +198,16 @@ p {
   padding-top: 1.1vh;
   height: 1.9vh;
   width: auto;
-  padding-left: 2vw;
+  padding-left: 7.75vw;
 } @media only screen and (max-width: 1060px) {
   .logo{
     padding-top: 1.6vh;
-    height: 2.3vh;
+    padding-left: 9vw;
+    height: 1.7vw;
   }
 } @media only screen and (max-width: 600px) {
   .logo{
-    padding-right: 8.1vw;
-    float: right;
+    padding-left: 7.5vw;
     padding-top: 3.2vw;
     height: 2.8vw;
   }
@@ -216,7 +218,7 @@ p {
   padding-top: 1.1vh;
   height: 1.9vh;
   width: auto;
-  padding-right: 3vw;
+  padding-right: 3.5vw;
 } @media only screen and (max-width: 1060px) {
   .logo2{
     padding-top: 1.6vh;
