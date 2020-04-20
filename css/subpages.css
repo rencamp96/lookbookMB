@@ -1089,7 +1089,7 @@ hr.new1 {
     height: 58vh;
     left: 50%;
     position: absolute;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
   }
 }
 
@@ -1109,9 +1109,10 @@ hr.new1 {
 } @media (orientation: portrait){
   .video_holder{
     top: 6vh;
-    left: 2vh;
-    width: 32vh;
-    height: 16vh;
+    left: 6.5vh;
+    width: 31.5vh;
+    height: 54vh;
+    overflow: hidden;
   }
 }
 
@@ -1147,7 +1148,7 @@ hr.new1 {
 } @media (orientation: portrait){
   #video1_sombra{
     height: 58vh;
-    width: 33.5vh;
+    width: 35vh;
     top: 4vh;
     left: 4.2vh;
   }
@@ -1191,8 +1192,8 @@ hr.new1 {
 #videoStatic1 {
   position: absolute;
   z-index: -1000!important;
-  top: 15vh;
-  left: 89vh;
+  top: 17vh;
+  left: 65vh;
   height: 68vh;
   width: auto;
   overflow-x: hidden !important;

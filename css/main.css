@@ -171,7 +171,7 @@ p {
   background-color: #94ab9e;
   border-style: groove none none none;
   border-color: #ffffff;
-  position: absolute;
+  position: fixed;
   left: 0;
   width: 100vw;
   height: 4.5vh;
