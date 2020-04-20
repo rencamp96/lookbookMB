@@ -96,6 +96,41 @@ h3 {
   }
 }
 
+h4 {
+	color: #303030;
+	font-family: MontserratMedium;
+  font-size: 1.2vw;
+  line-height: .5;
+  margin-bottom: 0vw;
+  padding-top: 1vw;
+} @media only screen and (max-width: 1060px) {
+  h4 {
+    line-height: 1.5;
+    font-size: 1.8vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h4 {
+    font-size: 2.7vw;
+  }
+}
+
+h5 {
+  color: #303030;
+	font-family: MontserratLight;
+  font-size: 7vh;
+  line-height: .5;
+  margin-bottom: 3vw;
+  margin-top: 1.5vw;
+} @media only screen and (max-width: 1060px) {
+  h5 {
+    margin-bottom: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  h5 {
+    margin-bottom: 7vw;
+  }
+}
+
 h6 {
 	color: #ffffff;
 	font-family: MontserratMedium;
@@ -151,7 +186,7 @@ p {
 } @media only screen and (max-width: 600px) {
   #foot{
     position: absolute;
-    top:216vw;
+    top:225vw;
     height: 10vw;
   }
 }
@@ -369,6 +404,146 @@ hr.new1 {
     padding: 1vw 1.5vw 0vw 1vw;
   }
 }
+
+#boton_creditos{
+  border-color: white;
+  background-color: #b3c9c3;
+  color: #303030;
+  padding: 0.2vw 2.3vw 0.2vw 2.3vw;
+  border-style: outset;
+  border-width: .3vw;
+  text-align: center;
+  display: inline-block;
+  font-size: .7vw;
+  cursor: pointer;
+  position: absolute;
+  top: 1.2vw;
+  right: 1.2vw;
+  font-family: MontserratMedium;
+} @media only screen and (max-width: 1060px){
+  #boton_creditos{
+    font-size: 1.3vw;
+    padding: 0.2vw 3vw 0.2vw 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #boton_creditos{
+    top: 217vw;
+    right: 3vw;
+    font-size: 2.5vw;
+    padding: 0.4vw 6.5vw 0.4vw 6.5vw;
+    border-width: .7vw;
+  }
+}
+
+#boton_creditos:hover {
+  background-color: #94ab9e;
+  color: #ffffff;
+}
+
+
+#creditos {
+  width: 30vw;
+  position: absolute;
+  top: 12vh;
+  left: 35vw;
+  z-index: 50200!important;
+  font-size: .9vw;
+  border: 1px solid #ffffff;
+  background-color: #94ab9e;
+  padding: .5vw .7vw 0vw .5vw;
+  display: none;
+} @media only screen and (max-width: 1060px){
+  #creditos {
+    left:27.5vw;
+    width: 45vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #creditos {
+    position: fixed;
+    left:15vw;
+    width: 70vw;
+    padding: 1vw 1.5vw 0vw 1.5vw;
+  }
+}
+
+#creditos_txt {
+  background-color: #ffffff;
+  padding: .7vw;
+  border-style:groove;
+  height: 20vw;
+  overflow-y: scroll;
+  margin-bottom: .7vw;
+}@media only screen and (max-width: 1060px){
+  #creditos_txt {
+    padding: 1vw;
+    height: 50vh;
+  }
+} @media only screen and (max-width: 600px) {
+  #creditos_txt{
+    margin-bottom: 1.5vw;
+    padding: 2vw;
+  }
+} /* width */
+#creditos_txt::-webkit-scrollbar {
+  width: 1.5vw;
+  border-style: outset;
+  border: 2vw;
+  border-color: #ffffff;
+  background-color: red;
+  color: red;
+}@media only screen and (max-width: 1060px){
+  #creditos_txt::-webkit-scrollbar {
+    width: 2.5vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #creditos_txt::-webkit-scrollbar{
+    width: 4vw;
+  }
+}/* Track */
+#creditos_txt::-webkit-scrollbar-track {
+  border-style: outset;
+  border: 2vw;
+  border-color: #ffffff;
+  background-color: #b3c9c3;
+  color: red;
+} /* Handle */
+#creditos_txt::-webkit-scrollbar-thumb {
+  border-style: outset;
+  border: 2vw;
+  border-color: #ffffff;
+  background: #888;
+} /* Handle on hover */
+#creditos_txt::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#creditos_txt p{
+  margin-left: 2vw;
+  line-height: 1.5vw;
+} @media only screen and (max-width: 1060px){
+  #creditos p{
+    line-height: 2.5vw;
+    margin-left: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #creditos p{
+    line-height: 4vw;
+    margin-left: 5vw;
+  }
+}
+
+#backlight{
+  opacity: .9;
+  height: 100vh;
+  width: 100vw;
+  background-color: #303030;
+  position: fixed;
+  z-index: 50100;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
 
 #nota {
   background-color: #ffffff;
@@ -840,7 +1015,7 @@ hr.new1 {
 #boton4{
   position: absolute;
   left: 86vw;
-  top: 2vw;
+  top: 5vw;
 } @media only screen and (max-width: 1060px){
   #boton4 {
     left: 17vw;
@@ -1009,26 +1184,6 @@ hr.new1 {
 
 /* -----------   seccion 1   -----------*/
 
-.regresar1{
-  border-color: white;
-  background-color: #b3c9c3;
-  color: #303030;
-  padding: .5vh 5vh;
-  border-style: outset;
-  text-align: center;
-  display: inline-block;
-  font-size: 1.5vh;
-  cursor: pointer;
-  position: absolute;
-  top: 72vh;
-  left: 7.5vh;
-  font-family: MontserratMedium;
-} @media (orientation: portrait){
-  .regresar1{
-    top: 83vh;
-    left: 21.5vh;
-  }
-}
 
 .regresar1:hover {
   background-color: #94ab9e;

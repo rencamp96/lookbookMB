@@ -7,9 +7,37 @@
   <title>MBFWMX Lookbook</title>
   <link rel="stylesheet" type="text/css" href="../css/subpages.css">
   <script src="../js/main.js"></script>
+  <style>
+    #loader-clean {
+      position: fixed;
+      z-index: 99;
+      min-width: 100%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 100000;
+    }
+
+    #loader-clean.hidden {
+      animation: fadeOut 1s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeOut {
+      100% {
+        opacity: 0;
+        visibility: hidden;
+      }
+    }
+  </style>
 </head>
 
 <body>
+  <div id="loader-clean">
+    <img id="loader-clean" src="../assets/loader.gif">
+  </div>
+
   <div id="container">
     <div id="container2">
       <div id="fondo_col"></div>

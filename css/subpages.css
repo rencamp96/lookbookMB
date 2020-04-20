@@ -382,7 +382,7 @@ hr.new1 {
   padding-top:4vh;
   margin: 0;
   padding-right: .5vw;
-} @media only screen and (max-width: 600px){
+} @media (orientation: portrait){
   #titulo {
     padding-top: 2.7vw;
     text-align: left;
@@ -1014,13 +1014,13 @@ hr.new1 {
   opacity: .9;
   position: absolute;
   display: none;
-  height: 3.5vh;
+  height: 3vh;
   width:auto;
 } @media (orientation: portrait){
   .scroll_gif{
     display: inline-block;
-    top: 83vh;
-    left: 34vh;
+    top: 81vh;
+    left: 36.5vh;
   }
 }
 
@@ -1160,9 +1160,9 @@ hr.new1 {
   z-index: -102;
 } @media (orientation: portrait){
   #degradado1{
+    top: 89vh;
+    height: 11vh;
     width: 89vh;
-    height: 8vh;
-    top: 92vh;
   }
 }
 
@@ -1177,8 +1177,8 @@ hr.new1 {
   z-index: -102;
 } @media (orientation: portrait){
   #degradado1_2{
-    height: 6.5vh;
-    top: 89vh;
+    height: 8vh;
+    top: 86vh;
     width: 89vh;
   }
 }
@@ -1193,7 +1193,7 @@ hr.new1 {
   overflow-x: hidden !important;
 } @media (orientation: portrait) {
   #videoStatic1 {
-  top: 16vh;
+  top: 9vh;
   left: 21.5vh;
   z-index: -500 !important;
   }

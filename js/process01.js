@@ -1,5 +1,4 @@
-window.addEventListener("load", function (e) {
-
+window.addEventListener("load", () => {
     let path = window.location.pathname;
     let page = path.split("/").pop();
     let n = page.split(".")[0];
@@ -20,4 +19,7 @@ window.addEventListener("load", function (e) {
     let v3 = document.getElementById("video3");
     rand = Math.round(Math.random() * 13) + 1;
     v3.src = "../assets/interiors/interior" + rand + ".mp4";
+
+    const loader = document.getElementById("loader-clean");
+    loader.className += " hidden";
 });

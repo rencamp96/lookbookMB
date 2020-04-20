@@ -25,8 +25,11 @@ function setup() {
 	if (window.innerWidth <= 600) {
 		document.getElementById('center').style.top = 10 + 'vw';
 	}
-
 }
+function myFunction(){
+    document.getElementById('creditos').style.display = 'inline-block';
+		document.getElementById('backlight').style.display = 'inline-block';
+};
 
 function windowResized() {
 
@@ -43,6 +46,7 @@ function windowResized() {
 	}
 	if (window.innerWidth <= 1060 && window.innerWidth >= 600) {
 		marginMedium = (totalHeight - (contentHeight / 5 * 9)) / 2;
+		document.getElementById('center').style.top = marginMedium + 'px';
 	}
 	if (window.innerWidth <= 600) {
 		marginMovil = (totalHeight - (contentHeight / 5 * 12)) / 2;
