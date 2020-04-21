@@ -410,6 +410,9 @@ hr.new1 {
 }
 
 #boton_creditos{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   position: fixed;
   z-index: 50001;
   bottom: 0.4vh;
@@ -452,6 +455,9 @@ hr.new1 {
 
 
 #boton_fashionfilm{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   border-color: white;
   background-color: #b3c9c3;
   color: #303030;
