@@ -44,6 +44,8 @@ video::-internal-media-controls-overlay-cast-button {
        display: none;
 }
 
+.my-field { -webkit-appearance: none !important; }
+
 #bg{
   background-color: #303030;
   position: fixed;
@@ -410,6 +412,7 @@ hr.new1 {
 }
 
 #boton_creditos{
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -455,6 +458,7 @@ hr.new1 {
 
 
 #boton_fashionfilm{
+  border-radius: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -493,7 +497,6 @@ hr.new1 {
   background-color: #94ab9e;
   color: #ffffff;
 }
-
 
 #closebtn_fashionfilm{
   font-family: MontserratLight;
