@@ -30,6 +30,12 @@ function myFunction() {
 	document.getElementById('backlight').style.display = 'inline-block';
 };
 
+function myFunction2() {
+	document.getElementById('backlight2').style.display = 'inline-block';
+	document.getElementById('fashionfilm').style.display = 'inline-block';
+	document.getElementById('closebtn_fashionfilm').style.display = 'inline-block';
+};
+
 window.addEventListener("load", () => {
 	init();
 });

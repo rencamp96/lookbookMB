@@ -135,6 +135,7 @@ h6 {
 	color: #ffffff;
 	font-family: MontserratMedium;
   font-size: .6vw;
+  line-height: 1.7;
 } @media only screen and (max-width: 1060px) {
   h6 {
     font-size: .9vw;
@@ -149,7 +150,7 @@ p {
 	color: #303030;
 	font-family: MontserratMedium;
   font-size: .66vw;
-  line-height: 1vw;
+  line-height: 1.05vw;
   /* text-align: justify; */
 } @media only screen and (max-width: 1060px) {
   p {
@@ -158,8 +159,8 @@ p {
   }
 } @media only screen and (max-width: 600px) {
   p {
-    font-size: 1.8vw;
-    line-height: 3vw;
+    font-size: 1.72vw;
+    line-height: 3.4vw;
   }
 }
 
@@ -188,7 +189,7 @@ p {
 } @media only screen and (max-width: 600px) {
   #foot{
     position: absolute;
-    top:225vw;
+    top:240vw;
     height: 10vw;
     padding-left: 0vw;
   }
@@ -272,7 +273,7 @@ p {
   background-color: #94ab9e;
   position: absolute;
   left: 45vw;
-  top: 9vw;
+  top: 8.5vw;
   color: #ffffff;
   border: 1px ridge #ffffff;
   width: 27vw;
@@ -386,7 +387,7 @@ hr.new1 {
   width: 16.35134vw;
   position: absolute;
   top: 24.5vw;
-  left: 52.25vw;
+  left: 52.5vw;
   z-index: 10;
   font-size: .9vw;
   border: 1px solid #ffffff;
@@ -400,8 +401,8 @@ hr.new1 {
   }
 } @media only screen and (max-width: 600px) {
   #info1 {
-    top: 126vw;
-    left: 7vw;
+    top: 137vw;
+    left: 6.5vw;
     width: 34vw;
     z-index: 10;
     padding: 1vw 1.5vw 0vw 1vw;
@@ -409,10 +410,13 @@ hr.new1 {
 }
 
 #boton_creditos{
+  position: fixed;
+  z-index: 50001;
+  bottom: 0.4vh;
   border-color: white;
   background-color: #b3c9c3;
   color: #303030;
-  padding: 0.2vw 2.3vw 0.2vw 2.3vw;
+  padding: 0.1vw 2.3vw 0.1vw 2.3vw;
   border-style: outset;
   border-width: .3vw;
   text-align: center;
@@ -420,18 +424,21 @@ hr.new1 {
   font-size: .7vw;
   cursor: pointer;
   position: absolute;
-  top: 1.2vw;
-  right: 1.2vw;
+  right: 1.4vw;
   font-family: MontserratMedium;
 } @media only screen and (max-width: 1060px){
   #boton_creditos{
+    bottom:  auto;
+    top: 5vw;
+    right:1.4vw;
+    z-index: 100;
     font-size: 1.3vw;
     padding: 0.2vw 3vw 0.2vw 3vw;
   }
 } @media only screen and (max-width: 600px) {
   #boton_creditos{
-    top: 217vw;
-    right: 3vw;
+    top: 230vw;
+    right: 6.5vw;
     font-size: 2.5vw;
     padding: 0.4vw 6.5vw 0.4vw 6.5vw;
     border-width: .7vw;
@@ -443,6 +450,76 @@ hr.new1 {
   color: #ffffff;
 }
 
+
+#boton_fashionfilm{
+  border-color: white;
+  background-color: #b3c9c3;
+  color: #303030;
+  padding: 0.2vw 1.5vw 0.2vw 1.5vw;
+  border-style: outset;
+  border-width: .3vw;
+  text-align: center;
+  display: inline-block;
+  font-size: .7vw;
+  cursor: pointer;
+  position: absolute;
+  top: 1vw;
+  right:1.4vw;
+  z-index: 100;
+  font-family: MontserratMedium;
+} @media only screen and (max-width: 1060px){
+  #boton_fashionfilm{
+    font-size: 1.3vw;
+    padding: 0.2vw 1.5vw 0.2vw 1.5vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #boton_fashionfilm{
+    left: 6.5vw;
+    top: 137vw;
+    right: 3vw;
+    font-size: 2.5vw;
+    padding: 0.4vw 6.5vw 0.4vw 6.5vw;
+    border-width: .7vw;
+  }
+}
+
+#boton_fashionfilm:hover {
+  background-color: #94ab9e;
+  color: #ffffff;
+}
+
+
+#closebtn_fashionfilm{
+  font-family: MontserratLight;
+  display: none;
+  float: right;
+  color: #ffffff;
+  font-size: 4vw;
+  margin-right: 1.5vw;
+  cursor: pointer;
+  z-index: 50002 !important;
+} @media only screen and (max-width: 1060px) {
+  #closebtn_fashionfilm{
+    font-size: 6vw;
+    margin-right: 3vw;
+  }
+} @media only screen and (max-width: 600px) {
+  #closebtn_fashionfilm{
+    font-size: 10vw;
+    margin-right: 3vw;
+  }
+}
+
+
+#closebtn_fashionfilm:hover {
+  color: #ffffff;
+}
+
+
+#boton_creditos:hover {
+  background-color: #94ab9e;
+  color: #ffffff;
+}
 
 #creditos {
   width: 30vw;
@@ -542,6 +619,17 @@ hr.new1 {
   background-color: #303030;
   position: fixed;
   z-index: 50100;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#backlight2{
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  position: fixed;
+  z-index: 50001 !important;
   top: 0;
   left: 0;
   display: none;
@@ -664,7 +752,7 @@ hr.new1 {
   top: 10vw;
   left: 46vw;
   width: 28.2vw;
-  height: 13.7vw;
+  height: 13.25vw;
   z-index: 0;
 } @media only screen and (max-width: 1060px){
   #cuadroVerde2{
@@ -703,7 +791,14 @@ hr.new1 {
   }
 } @media only screen and (max-width: 600px){
   #degradado_izquierda{
-    display: none;
+    width: 15vw;
+    left: 85vw;
+    height: 80vw;
+    z-index: 1;
+    top: 160vw;
+    min-height: 0;
+    opacity: .3;
+    background-image: linear-gradient(#303030, #566def, #f867e9);
   }
 }
 
@@ -829,16 +924,17 @@ hr.new1 {
 #info1_sombra{
   background-color: #f867e9;
   position: absolute;
-  top: 25.5vw;
-  left: 53.5vw;
-  width: 17.75vw;
-  height: 15.75vw;
+  top: 26vw;
+  left: 54vw;
+  width: 17.25vw;
+  height: 15.25vw;
   z-index: -2;
 } @media only screen and (max-width: 1060px) {
   #info1_sombra{
+    display:inline-block;
     width: 25.25vw;
-    height: 28vw;
-    top: 46vw;
+    height: 26.5vw;
+    top: 47vw;
     left: 50vw;
   }
 } @media only screen and (max-width: 600px) {
@@ -893,12 +989,33 @@ hr.new1 {
   }
 }
 
+#degradado_final2{
+  display: none;
+  position: absolute;
+  opacity: .3;
+  background-image: linear-gradient(#303030, #f867e9);
+  overflow-x: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #degradado_final2{
+  }
+} @media only screen and (max-width: 600px) {
+  #degradado_final2{
+    display: inline-block;
+    width: 38vw;
+    right: 0;
+    height: 24vw;
+    top: 216vw;
+    z-index: 0;
+
+  }
+}
+
 #videoStatic {
   position: absolute;
   z-index: -100;
   top: 0vw;
   left: 38vw;
-  height: 42vw;
+  height: 42.5vw;
   width: auto;
   overflow-x: hidden !important;
 } @media only screen and (max-width: 1060px){
@@ -935,12 +1052,14 @@ hr.new1 {
   }
 }
 
+
+
 #videoInteractivo {
   position: absolute;
   z-index: -4;
-  top: 22.65vw;
-  left: 70vw;
-  width: 30vw;
+  top: 22vw;
+  left: 68.5vw;
+  width: 31.5vw;
   height: auto;
   overflow-x: hidden !important;
   overflow-y: hidden !important;
@@ -952,6 +1071,25 @@ hr.new1 {
   }
 } @media only screen and (max-width: 600px) {
   #videoInteractivo {
+    display: none;
+  }
+}
+
+#videoInteractivo2 {
+  display: none;
+  position: absolute;
+  top:0;
+  left: 0;
+  z-index: -4;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #videoInteractivo2 {
+    display: none;
+  }
+} @media only screen and (max-width: 600px) {
+  #videoInteractivo2 {
+    display: inline-block;
     top: 116vw;
     left: 30vw;
     width: 70vw;
@@ -963,159 +1101,6 @@ hr.new1 {
 //////         Botones de carpetas         //////
 ////////////////////////////////////////////// */
 
-#boton_texto{
-  margin-top: .5vw;
-}
-
-#boton1{
-  position: absolute;
-  left: 78vw;
-  top: 0vw;
-} @media only screen and (max-width: 1060px){
-  #boton1 {
-    left: 62vw;
-    top: 3vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton1 {
-    left: 72.5vw;
-    top: 0vw;
-  }
-}
-
-#boton2{
-  position: absolute;
-  left: 78vw;
-  top: 7vw;
-} @media only screen and (max-width: 1060px){
-  #boton2 {
-    left: 62vw;
-    top: 13vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton2 {
-    left: 72.5vw;
-    top: 22vw;
-  }
-}
-
-#boton3{
-  position: absolute;
-  left: 78vw;
-  top: 14vw;
-} @media only screen and (max-width: 1060px){
-  #boton3 {
-    left: 73vw;
-    top: 13vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton3 {
-    left: 72.5vw;
-    top: 44vw;
-  }
-}
-
-#boton4{
-  position: absolute;
-  left: 86vw;
-  top: 5vw;
-} @media only screen and (max-width: 1060px){
-  #boton4 {
-    left: 17vw;
-    top: 60vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton4 {
-    left: 72.5vw;
-    top: 66vw;
-  }
-}
-
-#boton5{
-  position: absolute;
-  left: 8vw;
-  top: 28vw;
-} @media only screen and (max-width: 1060px){
-  #boton5 {
-    left: 27vw;
-    top: 60vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton5 {
-    left: 49.5vw;
-    top: 160vw;
-    z-index: 10;
-  }
-}
-
-#boton6{
-  position: absolute;
-  left: 16vw;
-  top: 30.5vw;
-} @media only screen and (max-width: 1060px){
-  #boton6 {
-    left: 37vw;
-    top: 60vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton6 {
-    left: 72.5vw;
-    top: 155vw;
-  }
-}
-
-#boton7{
-  position: absolute;
-  left: 8vw;
-  top: 34.5vw;
-} @media only screen and (max-width: 1060px){
-  #boton7 {
-    left: 27vw;
-    top: 70vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton7 {
-    left: 27vw;
-    top: 185vw;
-  }
-}
-
-
-#boton8{
-  position: absolute;
-  left: 16vw;
-  top: 37vw;
-} @media only screen and (max-width: 1060px){
-  #boton8 {
-    left: 37vw;
-    top: 70vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton8 {
-    left: 49.5vw;
-    top: 180vw;
-  }
-}
-
-
-#boton9{
-  position: absolute;
-  left: 8vw;
-  top: 21vw;
-} @media only screen and (max-width: 1060px){
-  #boton9 {
-    left: 27vw;
-    top: 80vw;
-  }
-} @media only screen and (max-width: 600px){
-  #boton9 {
-    left: 72.5vw;
-    top: 175vw;
-  }
-}
-
-/* ---------------Carpeta------------------ */
-
 .botonRosa{
   background:url(./carpetas_img/c_volumen.png) no-repeat;
   background-size: 100% 100%;
@@ -1124,6 +1109,7 @@ hr.new1 {
   width: 5vw;
   height: 3.5vw;
   font-family: DMSerif;
+  z-index: 10;
 } @media only screen and (max-width: 1060px){
   .botonRosa {
     width: 7.5vw;
@@ -1150,6 +1136,207 @@ hr.new1 {
 
 .botonRosa:focus {
   outline:0;
+}
+
+#boton_texto{
+  margin-top: .5vw;
+  width: 5vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton_texto{
+    width: 7.5vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton_texto{
+    width: 17vw;
+  }
+}
+
+
+#boton1{
+  position: absolute;
+  left: 78vw;
+  top: 0vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton1 {
+    left: 62vw;
+    top: 3vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton1 {
+    left: 72.5vw;
+    top: 0vw;
+  }
+}
+
+#boton2{
+  position: absolute;
+  left: 78vw;
+  top: 7vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton2 {
+    left: 62vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton2 {
+    left: 72.5vw;
+    top: 20vw;
+  }
+}
+
+#boton3{
+  position: absolute;
+  left: 78vw;
+  top: 15vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton3 {
+    left: 73vw;
+    top: 13vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton3 {
+    left: 72.5vw;
+    top: 43vw;
+  }
+}
+
+#boton4{
+  position: absolute;
+  left: 86vw;
+  top: 10vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton4 {
+    left: 17vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton4 {
+    left: 72.5vw;
+    top: 66vw;
+  }
+}
+
+#boton5{
+  position: absolute;
+  left: 8vw;
+  top: 28vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton5 {
+    left: 27vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton5 {
+    left: 49.5vw;
+    top: 166vw;
+    z-index: 10;
+  }
+}
+
+#boton6{
+  position: absolute;
+  left: 16vw;
+  top: 30.5vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton6 {
+    left: 37vw;
+    top: 60vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton6 {
+    left: 72.5vw;
+    top: 155vw;
+  }
+}
+
+#boton7{
+  position: absolute;
+  left: 8vw;
+  top: 34.5vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton7 {
+    left: 27vw;
+    top: 70vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton7 {
+    left: 27vw;
+    top: 197vw;
+  }
+}
+
+
+#boton8{
+  position: absolute;
+  left: 16vw;
+  top: 37vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton8 {
+    left: 37vw;
+    top: 70vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton8 {
+    left: 49.5vw;
+    top: 186vw;
+  }
+}
+
+
+#boton9{
+  position: absolute;
+  left: 16vw;
+  top: 23vw;
+  z-index: 10;
+} @media only screen and (max-width: 1060px){
+  #boton9 {
+    left: 27vw;
+    top: 80vw;
+  }
+} @media only screen and (max-width: 600px){
+  #boton9 {
+    left: 72.5vw;
+    top: 175vw;
+  }
+}
+
+
+#fashionfilm{
+  display: none;
+  position: absolute;
+  z-index: 50101;
+  top: 4.5vw;
+  left: 19vw;
+  width: 62vw;
+  height: auto;
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
+} @media only screen and (max-width: 1060px){
+  #fashionfilm{
+    left: 15vw;
+    width: 70vw;
+    top: 10vh;
+  }
+} @media only screen and (max-width: 600px) {
+  #fashionfilm{
+    position: fixed;
+    left: 12vw;
+    width: 76vw;
+    top: 12vw;
+  }
+}
+
+#fashionfilm video::-internal-media-controls-overlay-cast-button {
+  all: unset;
 }
 
 /* //////////////////////////////////////////////

@@ -11,6 +11,7 @@
 
 <body>
   <input id="boton_creditos" type="submit" onclick="myFunction();" value="Créditos"/>
+  <input id="boton_fashionfilm" type="submit" onclick="myFunction2();" value="Fashion Film"/>
   <div id="bg"></div>
   <div id="center">
     <div class="reel1">
@@ -19,7 +20,7 @@
         Colección Volumen 20 Fall
       </div>
       <hr class="new1">
-      <video id="videoInteractivo1" src="assets/clip2_2.mp4" type="video/mp4" autoplay muted loop>
+      <video id="videoInteractivo1" src="assets/opening2.mp4" type="video/mp4" autoplay muted loop>
     </div>
     <div id="pic-holder"></div>
     <div class="alert">
@@ -36,7 +37,7 @@
       </div>
       <p id="nota" autofocus>«La máquina no es una cosa que deba ser animada, trabajada y dominada, pues la máquina
         somos nosotros y, nuestros procesos, un aspecto de nuestra encarnacion. Podemos ser responsables de las
-        máquinas, ellas no nos dominan, no nos amenazan. Somos responsables de los límites, somos ellas.«<br><br><br>
+        máquinas, ellas no nos dominan, no nos amenazan. Somos responsables de los límites, somos ellas.«<br><br>
         * Donna Haraway, El manifiesto cyborg.</p>
     </div>
     <div id="creditos">
@@ -57,7 +58,7 @@
         <p> Egresados DTM CENTRO <br> Ana Gómez <br> Ana Luisa Blumenkrón <br> Rodrigo de Noriega <br> Dante Tamés </p>
         <h4>MEDIOS DIGITALES Y TECNOLOGÍA</h4>
         <p> Roberto Cabezas <br> Rolando Gonzalez <br> Bruno Diaz <br> Denise Balderas </p>
-        <h4>DISEÑADORES MEDIOS DIGITALES Y TECNOLOGÍA</h4>
+        <h4>DISEÑADORES MEDIOS DIGITALES <br><br><br>Y TECNOLOGÍA</h4>
         <p> Constantino Brito <br> Emilio Slavik Susunaga <br> Nicolás Negrete <br> Karen Sofía Vega <br> Montserrat Vázquez <br> Valentina Herrera <br> Regina Vargas <br> Juan Manuel Ponce de la Teja <br> Cecilia Mancera <br> Alejandro Hernández <br> Bruno Díaz <br> Rolando González Arreola</p>
         <h4>DISEÑO Y DESARROLLO WEB</h4>
         <p> Renata Campuzano Castañón </p>
@@ -76,11 +77,10 @@
 </p>
 </div>
     </div>
-    <div id="backlight"></div>
     <!--//////////// botones ////////////-->
     <div id="boton1">
-      <button class="botonRosa" onclick="window.location.href='./subpages/cora.html'"></button>
-      <h6 id="boton_texto"> Caifán </h6>
+      <button class="botonRosa" onclick="window.location.href='./subpages/yunuen.html'"></button>
+      <h6 id="boton_texto"> Kteis </h6>
     </div>
     <div id="boton2">
       <button class="botonRosa" onclick="window.location.href='./subpages/itala.html'"></button>
@@ -95,8 +95,8 @@
       <h6 id="boton_texto"> Extraños</h6>
     </div>
     <div id="boton5">
-      <button class="botonRosa" onclick="window.location.href='./subpages/marien.html'"></button>
-      <h6 id="boton_texto"> Creatures of the Wind </h6>
+      <button class="botonRosa" onclick="window.location.href='./subpages/cora.html'"></button>
+      <h6 id="boton_texto"> Caifán </h6>
     </div>
     <div id="boton6">
       <button class="botonRosa" onclick="window.location.href='./subpages/mildred.html'"></button>
@@ -111,12 +111,13 @@
       <h6 id="boton_texto"> El soñador</h6>
     </div>
     <div id="boton9">
-      <button class="botonRosa" onclick="window.location.href='./subpages/yunuen.html'"></button>
-      <h6 id="boton_texto"> Kteis </h6>
+      <button class="botonRosa" onclick="window.location.href='./subpages/marien.html'"></button>
+      <h6 id="boton_texto"> Creatures of the Wind </h6>
     </div>
     <!--//////////// video interactivo ////////////-->
-    <video id="videoInteractivo" src="assets/opening2.mp4" type="video/mp4" autoplay muted loop>
-      <!-- <source src="assets/video_int1.mp4" type="video/mp4"> -->
+    <video id="videoInteractivo" src="assets/clip2_2.mp4" type="video/mp4" autoplay muted loop>
+    </video>
+    <video id="videoInteractivo2" src="assets/clip_movil.mp4" type="video/mp4" autoplay muted loop>
     </video>
     <div id="cuadroRojo1"></div>
     <div id="cuadroVerde2"></div>
@@ -130,12 +131,20 @@
   </div>
 
   <div id="videoFrame"></div>
+  <video id="fashionfilm" src="assets/clip2_2.mp4" type="video/mp4" controls>
+  </video>
+
+  <div id="backlight"></div>
+  <div id="backlight2">
+    <span id="closebtn_fashionfilm" onclick="document.getElementById('fashionfilm').style.display='none'; document.getElementById('backlight2').style.display='none';">×</span>
+  </div>
 
   <!--//////////// cuadros de fondo ////////////-->
   <div id="cuadro_mobil"></div>
   <div id="degradado_izquierda"></div>
   <div id="degradado_izquierda_frame"></div>
   <div id="degradado_final"></div>
+  <div id="degradado_final2"></div>
   <div id="foot">
     <img src="assets/logos/steamlab.png" class="logo">
     <img src="assets/logos/cassar.png" class="logo">

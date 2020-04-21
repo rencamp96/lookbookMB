@@ -73,26 +73,35 @@ h2 {
 	color: #ffffff;
 	font-family: MontserratLight;
   font-size: 1.5vw;
-  line-height: 1;
-} @media only screen and (max-width: 1060px) {
+  line-height: 0;
+  float:right;
+} @media (orientation: portrait){
   h2 {
-    line-height: .7;
-    font-size: 2.3vw;
-  }
-} @media only screen and (max-width: 600px) {
-  h2 {
-    font-size: 4.8vw;
+    font-size: 1.8vh;
   }
 }
 
 h3 {
   color: #ffffff;
 	font-family: MontserratRegular;
-  font-size: 7vh;
-  line-height: 1;
+  font-size: 10vh;
+  line-height: 1.2;
 } @media (orientation: portrait){
   h3 {
-    font-size: 4vh;
+    font-size: 5vh;
+    line-height: 1;
+  }
+}
+
+h4 {
+  color: #ffffff;
+	font-family: MontserratRegular;
+  font-size: 6vh;
+  line-height: 1.2;
+  margin-right: -2vh;
+} @media (orientation: portrait){
+  h4 {
+    font-size: 3.5vh;
     line-height: 1.2;
   }
 }
@@ -381,11 +390,23 @@ hr.new1 {
   text-align: right;
   padding-top:4vh;
   margin: 0;
-  padding-right: .5vw;
+  padding-right: .5vh;
+  padding-bottom: 2vh;
 } @media (orientation: portrait){
   #titulo {
     padding-top: 2.7vw;
-    text-align: left;
+    padding-left: .5vw;
+  }
+}
+
+#titulo2 {
+  padding-top: 1.2vh;
+  text-align: right;
+  margin: 0;
+  padding-right: .5vh;
+} @media (orientation: portrait){
+  #titulo2 {
+    padding-top: 0vw;
     padding-left: .5vw;
   }
 }
@@ -406,10 +427,9 @@ hr.new1 {
 #subtitulo {
   text-align: right;
   margin: 0;
-  padding-right: .5vw;
+  padding-right: .5vh;
 } @media only screen and (max-width: 600px){
   #subtitulo {
-    text-align: left;
     padding-left: .5vw;
   }
 }
@@ -1020,7 +1040,7 @@ hr.new1 {
   .scroll_gif{
     display: inline-block;
     top: 81vh;
-    left: 36.5vh;
+    left: 34.5vh;
   }
 }
 
@@ -1327,6 +1347,25 @@ hr.new1 {
   padding-bottom: 1vh;
 } @media (orientation: portrait){
   .look4{
+    left: 126vh;
+    top: 7vh;
+  }
+}
+
+.look7{
+  display: inline-block;
+  background-color: #94ab9e;
+  position: absolute;
+  left: 187vh;
+  top: 15vh;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  z-index: 0;
+  padding: 1.5vh;
+  font-size: 1.7vh;
+  padding-bottom: 1vh;
+} @media (orientation: portrait){
+  .look7{
     left: 126vh;
     top: 7vh;
   }
